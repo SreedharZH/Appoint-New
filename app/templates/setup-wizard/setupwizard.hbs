@@ -1,0 +1,45 @@
+
+       <div class="container pos-abs">
+         <div class="col-left dis-inbl fl boxsize">
+         <div class="logo"> <a href="javascript:void(0);" class="dis-inbl"> <span class="logoimg dis-inbl"></span> <span class="logoname dis-inbl"> Appointment</span> </a> </div>
+         <div  class="setup-title over">
+            <div class="welcomenotes">
+              <p class="welcome-name">Welcome <span class="user-name">Wilson!</span></p>
+                   <p class="welcome-name">
+                      To start getting appointments,
+                   </p>
+           <h2 class="setup-name"> <span class="grd1">Setup your</span> <span class="grd2">business</span> </h2>
+            </div>
+            <div class="bottomNavigate">
+                   <ul class="steplinks" {{action "pressed"}}>
+                      <li data-tab="businessinfo" class="active">Business Info</li>
+                      <li data-tab="businesshours">Business Hours</li>
+                      <li data-tab="addservice">Add Services</li>
+                      <li data-tab="addstaff">Add Staffs</li>
+                   </ul>
+                 </div>
+              <div class="zlogo"><img src="/images/zlogo.png" alt="zohologo"/></div>
+         </div>
+       </div>
+           <div class="col-middle dis-inbl fl boxsize">
+                  {{setup-wizard.sw-binfo}}
+                  {{setup-wizard.sw-bhours}}
+                  {{setup-wizard.sw-service action="addService"}}
+                  {{setup-wizard.sw-staff}}
+                  <div class="steps">
+                      <span>Step &nbsp; 1 of 4</span>
+                  </div>
+
+                  <div {{action 'backStep'}} class="btn-back hide boxsize">
+                    <button class="backbtn dis-inbl"> Back </button>
+                  </div>
+
+                  <div {{action 'nextStep'}} class="btn-nxt boxsize">
+                    <button class="btnstyle dis-inbl"> Next </button>
+                  </div>
+
+           </div>
+
+       </div>
+
+{{outlet}}
