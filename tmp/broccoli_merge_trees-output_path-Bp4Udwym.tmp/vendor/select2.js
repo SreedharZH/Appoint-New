@@ -1,0 +1,1 @@
+/Users/sankar-2920/Appoint-New/vendor/select2.js

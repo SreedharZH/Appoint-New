@@ -1541,7 +1541,7 @@ select:-moz-focusring {
 .title span{
 	font-family: libre_franklinregular;
 }
-.stats{
+.db-inner-container{
 	background: #fff;
 	border-radius: 5px;
 	/*box-shadow: 0 0 10px 0px rgba(160, 159, 188, 0.14);*/
@@ -1556,7 +1556,7 @@ select:-moz-focusring {
 	width: 100%;
 }
 .total-appoints{
-	width: 280px;
+	width: 300px;
 }
 .total-appoints .total{
 	color: #594a88;
@@ -1566,13 +1566,13 @@ select:-moz-focusring {
 	margin-right: 10px;
 }
 .desc{
-	color: #999999;
-	font-size: 12px;
+	color: #666;
+	font-size: 13px;
 	font-family: libre_franklinregular;
 }
 .last-days .last{
 	color: #594a88;
-	font-size: 12px;
+	font-size: 13px;
 	font-family: libre_franklinsemibold;
 }
 .today-detail{
@@ -1586,12 +1586,12 @@ select:-moz-focusring {
 	margin-right: 10px;
 }
 .today-detail .desc{
-	color: #999999;
+	color: #666;
 	font-size: 12px;
 	font-family: libre_franklinregular;
 }
 .title-row{
-	background: #f4f5f9;
+	background: #f8f8fb;
 	padding: 0 10px 0 30px;
 }
 .title-row span{
@@ -1606,23 +1606,30 @@ select:-moz-focusring {
 }
 .customer-row span{
 	color: #666666;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: libre_franklinregular;
 }
 .title-row .fl:nth-child(1),
 .customer-row .fl:nth-child(1){
-	width: 15% !important;
+	width: 13% !important;
+}
+.title-row .fl:nth-child(4),
+.customer-row .fl:nth-child(4){
+		width: 17% !important;
 }
 .title-row .fl:nth-child(n+0),
 .customer-row .fl:nth-child(n+0){
 	width: 20%;
 }
+.title-row .fl:nth-child(3),
+.customer-row .fl:nth-child(3),
 .title-row .fl:last-child,
 .customer-row .fl:last-child{
 	width: 25%;
 }
-.customer-row .time{
-	color: #444444;
+.customer-row .time,
+.customer-row .service{
+	color: #111;
 	font-family: libre_franklinmedium;
 }
 .service:before{
@@ -1642,10 +1649,10 @@ select:-moz-focusring {
 .staff .avatar{
 	width: 35px;
 	height: 35px;
-	border-radius: 50%;
+	/*border-radius: 50%;
 	background: #fafbfc;
-	border: 1px solid #e0e5f1;
-	padding: 3px;
+	border: 1px solid #e0e5f1;*/
+	padding: 3px 0;
 	vertical-align: middle;
 	margin-right: 10px;
 	display: none !important;
@@ -1691,8 +1698,8 @@ select:-moz-focusring {
 	width: 37%;
 }
 .url-generate .title{
-	color: #666666;
-	font-size: 13px;
+	color: #111;
+	font-size: 14px;
 	font-family: libre_franklinregular;
 	text-transform: capitalize;
 }
@@ -1738,7 +1745,7 @@ select:-moz-focusring {
 	margin-top: 6px;
 }
 .create-title .create .title{
-	color: #666666;
+	color: #111;
 	font-size: 15px;
 	font-family: libre_franklinregular;
 	text-transform: capitalize;
@@ -1748,13 +1755,13 @@ select:-moz-focusring {
   height: 14px;
   width: 14px;
 }
-.stats .sub-title{
+.db-inner-container .sub-title{
 	color: #333333;
 	font-size: 13px;
 	font-family: libre_franklinmedium;
 	padding: 20px 0 10px 0;
 }
-.stats .col-title{
+.db-inner-container .col-title{
 	color: #999999;
 	font-size: 12px;
 	font-family: libre_franklinregular;
@@ -1769,7 +1776,7 @@ select:-moz-focusring {
 .staff .name,
 .staff-row .service{
 	color: #333333;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: libre_franklinregular;
 	vertical-align: middle;
 }
