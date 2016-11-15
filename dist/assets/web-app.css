@@ -1962,7 +1962,9 @@ select:-moz-focusring {
 	font-size:14px;
 }
 .calendar-titleRow .calendar-day.holiday,
-.appointment-row .appointments.holiday{
+.appointment-row .appointments.holiday,
+.month-wise .calendar-titleRow .calendar-day.holiday,
+.month-wise .appointment-row .appointments.holiday{
 	width:7.5%;
 }
 .appointment-row .appointments.holiday{
@@ -2016,7 +2018,7 @@ select:-moz-focusring {
 	width:15%;
 }
 .appointments .total-appointments{
-	color:#8b80b8;
+	color:#515593;
 	font-size:14px;
 	font-weight:300;
 	margin-bottom:15px;
@@ -2037,5 +2039,29 @@ select:-moz-focusring {
 }
 .appointments .appointments-booked ul li.deactive{
 	color:#bbbbbb;
+}
+/*month-wise*/
+.month-wise .calendar-titleRow .calendar-day{
+	padding: 33px;
+  text-align: center;
+}
+.month-wise .calendar-titleRow .calendar-day,
+.month-wise .appointment-row .appointments{
+	width: 17%;
+}
+.month-wise .appointment-row .appointments{
+	position: relative;;
+}
+.month-wise .appointments .total-appointments{
+	text-align: center;
+	margin: 55px 0;
+}
+.month-wise .appointment-row .appointments .date{
+	color: #999999;
+	font-size:16px;
+	font-family: libre_franklinlight;
+	position: absolute;
+	right: 15px;
+	top: 15px;
 }
 /*calendar*/
