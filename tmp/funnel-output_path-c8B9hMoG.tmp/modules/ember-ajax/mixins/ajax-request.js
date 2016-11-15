@@ -1,1 +1,0 @@
-/Users/sankar-2920/Appoint-New/tmp/funnel-input_base_path-ayhGlTk7.tmp/0/mixins/ajax-request.js

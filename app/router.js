@@ -18,7 +18,7 @@ Router.map(function() {
       this.route('mydesk'); // No I18N
     });
 
-    this.route('appointments', function() { // No I18N
+    this.route('all-appointmentsts', function() { // No I18N
       this.route('calendar'); // No I18N
     });
 
