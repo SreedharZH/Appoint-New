@@ -244,6 +244,12 @@ button {
 .pad-40{
 	padding: 40px !important;
 }
+.pad-top10{
+	padding-top: 10px !important;
+}
+.pad-bot10{
+	padding-bottom: 10px !important;
+}
 .no-space {
 	padding: 0 !important;
 }
@@ -373,7 +379,7 @@ button {
 	width: 100%;
 }
 .appoint-left {
-	padding: 10px 10px;
+	padding: 9px 20px;
 	width: 200px;
 }
 .logoimg {
@@ -428,9 +434,8 @@ button {
 }
 .user-profile{
 	background: rgba(0, 0, 0, 0) url("/images/user-profile.jpg") no-repeat scroll 0 0 / 100% auto;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
+	width: 60px;
+	height: 60px;
 }
 .grey-color {
 	color: #666666;
@@ -1550,7 +1555,9 @@ select:-moz-focusring {
 .container.dashboard{
 	background-color: #f0f2f5;
   padding: 40px 50px;
-
+	top: 60px;
+	overflow-y: scroll;
+	height: calc(100% - 60px);
 }
 .stats-graph img{
 	width: 100%;
@@ -1632,18 +1639,13 @@ select:-moz-focusring {
 	color: #111;
 	font-family: libre_franklinmedium;
 }
-.service:before{
-	content: '';
+.dashboard .service .service-clr{
 	width: 20px;
 	height: 20px;
 	background: #e8ffe6;
 	border: 1px solid #cce5ca;
 	border-radius: 3px;
 	display: inline-block;
-	top:8px;
-	left: 0;
-	position: absolute;
-	vertical-align: middle;
 }
 .customer-row .staff .profile,
 .staff .avatar{
@@ -1673,19 +1675,19 @@ select:-moz-focusring {
 .customer-row .staff{
 	padding: 12px 0;
 }
-.service.haircut:before{
+.dashboard .service.haircut .service-clr{
 	background: #d1f1f5;
 	border: 1px solid #c2dadd;
 }
-.service.haircut:before{
+.dashboard .service.haircut .service-clr{
 	background: #d1f1f5;
 	border: 1px solid #c2dadd;
 }
-.service.bridal:before{
+.dashboard .service.bridal .service-clr{
 	background: #fff3ee;
 	border: 1px solid #ece0da;
 }
-.service.manicure:before{
+.dashboard .service.manicure .service-clr{
 	background: #f8ffdf;
 	border: 1px solid #e0ebb9;
 }
@@ -1780,12 +1782,13 @@ select:-moz-focusring {
 	font-family: libre_franklinregular;
 	vertical-align: middle;
 }
-
-.customer-row .service,
 .staff-row .service{
-	position: relative;
-	padding:11px 0 11px 30px;
-	box-sizing: border-box;
+	padding: 8px 0;
+}
+.customer-row .service .sname,
+.staff-row .service .sname{
+	padding: 2px 0 2px 10px;
+	white-space: nowrap;
 }
 .staff-row .appoint-total{
 	color: #66a5f9;
@@ -1796,17 +1799,23 @@ select:-moz-focusring {
 /*my-desk*/
 
 /*calendar*/
+.calendar-container{
+	top: 60px;
+	width: 100%;
+}
 .header-secondary{
-	border-bottom:1px solid #d4d4e0;
-	padding:0 30px;
+	padding:0 20px;
 	height:64px;
 }
+.header-col{
+	width: 33.33%;
+}
 .header-secondary .appointment-view{
-	padding:15px 15px 15px 0;
+	margin: 16px 15px 16px 0;
 }
 .header-secondary .appointment-view .view-label{
 	font-size:12px;
-	color:#4a4774;
+	color:#999999;
 	font-family: libre_franklinregular;
 	padding:5px 5px 5px 0;
 }
@@ -1815,129 +1824,148 @@ select:-moz-focusring {
 	vertical-align:middle;
 }
 .header-secondary .appointment-view .view-type .calender-icon{
-	background:url("/images/sprite.png") 0 0 no-repeat;
+	background:url("/images/sprite.png") -25px 0 no-repeat;
 	width:16px;
 	height:16px;
 }
 .header-secondary .appointment-view .view-type .view-active{
 	padding:8px;
-	border:1px solid #cbd1e2;
-}
-.header-secondary .appointment-view .view-type .view-active.active{
-	background:#8b80b8;
-	border:1px solid #8b80b8;
 }
 .header-secondary .appointment-view .view-type .list-icon{
-	background:url("/images/sprite.png") 1px -22px no-repeat;
+	background:url("/images/sprite.png") -25px -22px no-repeat;
 	width:16px;
 	height:16px;
-	opacity:0.5;
 }
 .header-secondary .services{
-	padding:23px 40px;
+	padding:22px 40px;
 }
 .dropdown-label{
-	font-size:13px;
-	color:#666;
-	font-family: libre_franklinregular;
-	margin-right:10px;
+	font-size:12px;
+	color:#999999;
+	font-family: libre_franklinmedium;
+	margin-right:5px;
+	margin-top: 1px;
 }
 .dropdown .label{
-	color:#000;
-	font-size:13px;
-	font-family: libre_franklinregular;
+	color:#52518f;
+	font-size:12px;
+	font-family: libre_franklinmedium;
 	vertical-align:middle;
+	padding: 4px;
+	line-height: 10px;
 }
 .dropdown .arrw-icon{
 	background:url("/images/sprite.png") 3px -39px no-repeat;
 	width:16px;
 	height:16px;
-	margin-left:5px;
+}
+.header-secondary .dropdown-label{
+	margin-top: 3px;
+}
+.header-secondary .dropdown .label{
+	background: #e7e8ff;
+	border: 1px solid #d2d1ff;
+	border-radius: 1px;
+	padding: 4px 8px;
+	color: #000;
+}
+.header-secondary .dropdown .arrw-icon{
+	margin-left: 3px;
+	margin-top: 3px;
 }
 .header-secondary .book-button{
 	padding:12px 0;
+	display: table;
 }
 .header-secondary .book-button button{
-	background: rgba(80,56,113,1);
-	background: -moz-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(80,56,113,1)), color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(80,56,113,1)), color-stop(100%, rgba(136,92,182,1)));
-	background: -webkit-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
-	background: -o-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
-	background: -ms-linear-gradient(left, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
-	background: linear-gradient(to right, rgba(80,56,113,1) 0%, rgba(246,41,12,1) 0%, rgba(80,56,113,1) 0%, rgba(136,92,182,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#503871', endColorstr='#885cb6', GradientType=1 );
-	border-radius:50px;
-	padding:10px 40px;
+	background: rgb(97,93,151); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(97,93,151,1) 0%, rgba(151,88,146,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(97,93,151,1) 0%,rgba(151,88,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(97,93,151,1) 0%,rgba(151,88,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', endColorstr='#975892',GradientType=1 );
+	border-radius:50%;
 	color:#fff;
-	font-size:14px;
-	font-family: libre_franklinregular;
-	font-weight:300;
+	width: 40px;
+	height: 40px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(91, 90, 135, 0.59);
 }
 .header-secondary .book-button button:before{
 	content:'+';
 	font-family: libre_franklinregular;
-    font-size: 24px;
-    height: 20px;
-    line-height: 1;
-    vertical-align: middle;
-	margin: -6px 10px 0 0;
-	display:inline-block;
+  font-size: 24px;
+	margin: -6px 0px 0 0;
 }
-.calendar-header{
-	padding:0 30px;
+.header-secondary .setting{
+	margin-top: 23px;
+	margin-right: 30px;
 }
-.calendar-header .view-style{
-	margin:30px 0;
+.header-secondary .setting .setting-icon{
+	background:rgba(0, 0, 0, 0) url("/images/setting-icon.png") no-repeat scroll 0 0 / 100% auto;
+	width: 20px;
+	height: 20px;
 }
-.calendar-header .view-style span{
-	color:#8b80b8;
-	font-size:14px;
-	font-family: libre_franklinregular;
+.header-secondary .view-style{
+	margin: 19px 15px 19px 0;
+	border-left: 1px solid #eee;
+}
+.header-secondary .view-style span{
+	color:#999999;
+	font-size:12px;
+	font-family: libre_franklinmedium;
 	padding:5px 15px;
-	border-radius:3px;
 }
-.calendar-header .view-style span.active{
-	border:2px solid #8b80b8;
+.header-secondary .view-style span.active{
 	color:#404081;
-	line-height:1;
 }
 .calendar-style .calendar-iconBlack{
-	background:url("/images/sprite.png") 0px -60px no-repeat;
+	background:url("/images/sprite.png") -25px 0px no-repeat;
 	width:16px;
 	height:16px;
-	margin-bottom:5px;
+	margin:4px 0 0 20px;
 }
 .calendar-style .calendar-week .week{
-	color:#666666;
+	color:#333333;
 	font-size:16px;
-	font-family: libre_franklinregular;
+	font-family: libre_franklinmedium;
 	font-weight:200;
-	margin:0 30px;
+	margin:4px 20px;
+	line-height: 16px
 }
-.calendar-header .calendar-style{
-	margin:21px 0;
-	padding-right: 200px;
+.header-secondary .calendar-style{
+	margin: 20px auto;
+	width: 175px;
 }
-.calendar-style .calendar-week .prev,
-.calendar-style .calendar-week .next{
+.calendar-style .calendar-week > .prev,
+.calendar-style .calendar-week > .next{
 	background:url("/images/sprite.png") 0px -86px no-repeat;
 	width:10px;
 	height:17px;
 	position:relative;
 	top:3px;
 }
-.calendar-style .calendar-week .next{
+.calendar-style .calendar-week > .next{
 	background:url("/images/sprite.png") 0px -113px no-repeat;
 }
+.calendar-wraper{
+	box-sizing: border-box;
+	height: calc(100% - 125px);
+	overflow-y: scroll;
+	padding: 0 20px;
+	position: fixed;
+	width: 100%;
+}
 .calendar {
-	border-top:1px solid #e2e6f1;
+	 border: 1px solid #f2f2f2;
 }
 .calendar .calendar-titleRow,
 .calendar .appointment-row{
-	background:#f2f2f6;
+	background:#fbfbfb;
 	width:100%;
-	height:80px;
-	border-bottom:1px solid #e2e6f1;
+	height:60px;
+	border-bottom:1px solid #f2f2f2;
 }
 .calendar .appointment-row{
 	background:#fff;
@@ -1947,17 +1975,36 @@ select:-moz-focusring {
 .calendar-titleRow .calendar-day,
 .appointment-row .staff,
 .appointment-row .appointments{
-	border-right:1px solid #e2e6f1;
+	border-right:1px solid #f2f2f2;
 	height:100%;
+}
+.calendar-titleRow .calendar-day:last-child,
+.appointment-row .appointments:last-child{
+	border-right: 0;
+}
+.appointment-row:last-child{
+	border-bottom: 0;
 }
 .calendar-titleRow .staff,
 .appointment-row .staff{
 	width:10%;
-	padding:30px 10px 30px 20px;
+	padding:10px;
+	display: table;
+}
+.calendar-titleRow .staff .staff-title{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.calendar-titleRow .dropdown .arrw-icon{
+	display: table-cell;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: -1px;
 }
 .calendar-titleRow .calendar-day{
 	width:15%;
-	padding:20px 20px;
+	padding:10px;
 	color:#8b80b8;
 	font-size:14px;
 }
@@ -1966,41 +2013,50 @@ select:-moz-focusring {
 .month-wise .calendar-titleRow .calendar-day.holiday,
 .month-wise .appointment-row .appointments.holiday{
 	width:7.5%;
-}
-.appointment-row .appointments.holiday{
-	padding:0;
+	padding: 0 10px;
 }
 .appointment-row .appointments.holiday .break{
 	background:url("/images/holiday.png") repeat-y;
-	width:40px;
+	width:100%;
 	height:100%;
+	display: table-cell;
+}
+.calendar-day .date-title{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 .calendar-day .day{
 	font-size:12px;
 	text-transform:uppercase;
 	font-weight:300;
-	margin-bottom:3px;
-	font-family: libre_franklinregular;
+	font-family: libre_franklinmedium;
+	color: #999999;
+	display: table-cell;
+	vertical-align: middle;
 }
 .calendar-day .date{
-	font-size:22px;
-	color:#4a4774;
+	font-size:13px;
+	color:#999999;
 	font-weight:lighter;
 	font-family: libre_franklinlight;
 }
 .calendar-day .curr-day{
-	text-transform:uppercase;
-	color:#9c64a1;
+	color:#eb667d;
+	font-family: libre_franklinregular;
 	font-size:12px;
+	bottom: 10px;
+	right: 10px;
 }
 .appointment-row .staff .staff-name{
-	font-size:12px;
+	font-size:13px;
 	color:#000000;
-	margin-top:13px;
-	font-family: libre_franklinregular;
+	margin-top:10px;
+	font-family: libre_franklinmedium;
 }
-.appointment-row .staff{
-	padding:51px 20px;
+.appointment-row .staff .sprofile{
+	display: table-cell;
+	vertical-align: middle;
 }
 .appointment-row .staff img{
 	border: 6px solid #fff;
@@ -2014,21 +2070,23 @@ select:-moz-focusring {
 	color:#bbbbbb;
 	font-size:12px;
 	font-family: 'Libre Franklin', sans-serif;
-	padding:15px 20px;
+	padding:10px;
 	width:15%;
 }
 .appointments .total-appointments{
-	color:#515593;
+	color:#666666;
 	font-size:14px;
 	font-weight:300;
 	margin-bottom:15px;
+	font-family: libre_franklinregular;
 }
 .appointments .total-appointments .total{
-	color:#404081;
-	font-size:36px;
-	font-weight:lighter;
+	color:#111111;
+	font-size:18px;
 	vertical-align:middle;
-	margin-right:10px;
+	margin-bottom:5px;
+	font-family: libre_franklinmedium;
+	line-height: 22px;
 }
 .appointments .appointments-booked ul li{
 	color:#666666;
@@ -2041,27 +2099,177 @@ select:-moz-focusring {
 	color:#bbbbbb;
 }
 /*month-wise*/
-.month-wise .calendar-titleRow .calendar-day{
-	padding: 33px;
+.calendar-titleRow .calendar-day{
   text-align: center;
+	display: table;
 }
 .month-wise .calendar-titleRow .calendar-day,
 .month-wise .appointment-row .appointments{
 	width: 17%;
 }
-.month-wise .appointment-row .appointments{
-	position: relative;;
+.appointment-row .appointments{
+	position: relative;
+	display: table;
 }
-.month-wise .appointments .total-appointments{
+.appointments .total-appointments,
+.day-wise .calendar-titleRow .calendar-day .time-title{
 	text-align: center;
-	margin: 55px 0;
+	display: table-cell;
+	vertical-align: middle;
 }
-.month-wise .appointment-row .appointments .date{
+.appointment-row .appointments .date{
 	color: #999999;
 	font-size:16px;
 	font-family: libre_franklinlight;
 	position: absolute;
 	right: 15px;
 	top: 15px;
+}
+.datepicker-calendar{
+
+	position:absolute;
+	top:63px;
+	left:40%;
+	z-index:999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+/*day-wise*/
+.calendar.day-wise .appointment-row{
+	border-bottom: 0;
+	height: 150px;
+	position: relative;
+}
+.calendar.day-wise .services-row{
+  height: 60px;
+  left: 139px;
+  top: 40px;
+  width: calc(100% - 139px);
+	z-index: 1;
+}
+.day-wise .calendar-titleRow .calendar-day{
+	width: 8.18%;
+}
+.day-wise .calendar-titleRow .calendar-day .time-title .time{
+	color: #666666;
+	font-family: libre_franklinmedium;
+	font-size: 13px;
+}
+.day-wise .appointments{
+	padding: 0;
+	display: table;
+	width: 8.18%;
+}
+.day-wise .appointments .time-slot{
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	position: relative;
+}
+.day-wise .appointments .time-slot .tslot{
+	display: table-cell;
+	width: 25%;
+	border-right: 1px dashed #E6E6E6;
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+}
+.day-wise .appointments .time-slot .tslot:last-child{
+	border-right: 0;
+}
+.day-wise .appointments .time-slot .tslot.half{
+	border-right: 1px dashed #C5C5C5;
+}
+.day-wise .services-row .service,
+.day-wise .services-row .buff-time{
+	background: #000;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.day-wise .services-row .service .sname,
+.day-wise .services-row .buff-time .sname{
+	color: #514981;
+	font-size: 15px;
+	font-family: libre_franklinregular;
+}
+.day-wise .services-row .service .sname,
+.day-wise .services-row .service .timing{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	min-width: 50px;
+	white-space: nowrap;
+}
+.day-wise .services-row .service .timing{
+	color: #6b5e97;
+	font-size: 11px;
+	font-family: libre_franklinlight;
+	display: block;
+	margin-top: 6px;
+}
+.day-wise .services-row .haircut .service{
+	background: #e6eeff;
+}
+.day-wise .services-row .massage .service{
+	background: #e8ffe6;
+}
+.day-wise .services-row .bridal .service{
+	background: #f5edff;
+}
+.day-wise .services-row .manicure .service{
+	background: #f8ffdf;
+}
+.day-wise .services-row .timeoff .service{
+	background: #f9f7fd;
+	padding: 20px 0;
+}
+.day-wise .services-row .threading .service{
+	background: #fff3ee;
+}
+.day-wise .services-row .beard .service{
+	background: #d1f1f5;
+}
+.day-wise .services-row .buff-time{
+	background: #000;
+	padding: 20px 0;
+	width: 28px;
+}
+.day-wise .services-row .haircut .buff-time{
+	background: #f2f8ff;
+}
+.day-wise .services-row .massage .buff-time{
+	background: #f5fff4;
+}
+.day-wise .services-row .bridal .buff-time{
+	background: #fbf8ff;
+}
+.day-wise .services-row .manicure .buff-time{
+	background: #fdfff5;
+}
+.day-wise .services-row .threading .buff-time{
+	background: #fff8f5;
+}
+.day-wise .services-row .beard .buff-time{
+	background: #e5f9fb;
+}
+.day-wise .services-row .service.one-hr{
+	width: 115px;
+}
+.day-wise .services-row .service.one-halfhr{
+	width: 172px;
+}
+.day-wise .services-row .service.half-hr{
+	width: 58px;
+}
+.day-wise .services-row .booked-services .avail-booking{
+	height: 58px;
+	width: 28px;
+}
+.day-wise .services-row .booked-services .avail-booking .available{
+	background:rgba(0, 0, 0, 0) url("/images/available-bg.png") repeat-y scroll 0 0 / 100% auto;
+	width: 100%;
+	height: 100%;
+}
+.calendar.day-wise{
+
 }
 /*calendar*/

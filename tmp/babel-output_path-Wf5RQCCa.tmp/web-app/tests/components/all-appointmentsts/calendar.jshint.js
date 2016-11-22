@@ -1,9 +1,0 @@
-define('web-app/tests/components/all-appointmentsts/calendar.jshint', ['exports'], function (exports) {
-  'use strict';
-
-  QUnit.module('JSHint | components/all-appointmentsts/calendar.js');
-  QUnit.test('should pass jshint', function (assert) {
-    assert.expect(1);
-    assert.ok(false, 'components/all-appointmentsts/calendar.js should pass jshint.\ncomponents/all-appointmentsts/calendar.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/all-appointmentsts/calendar.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\ncomponents/all-appointmentsts/calendar.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\ncomponents/all-appointmentsts/calendar.js: line 4, col 5, Expected an identifier and instead saw \'#datepicker\'.\ncomponents/all-appointmentsts/calendar.js: line 4, col 18, \'function closure expressions\' is only available in Mozilla JavaScript extensions (use moz option).\ncomponents/all-appointmentsts/calendar.js: line 4, col 19, Expected an identifier and instead saw \'.\'.\ncomponents/all-appointmentsts/calendar.js: line 4, col 20, Expected \'}\' to match \'{\' from line 3 and instead saw \'datepicker\'.\ncomponents/all-appointmentsts/calendar.js: line 4, col 30, Bad invocation.\ncomponents/all-appointmentsts/calendar.js: line 4, col 32, Expected \')\' and instead saw \';\'.\ncomponents/all-appointmentsts/calendar.js: line 4, col 33, Missing semicolon.\ncomponents/all-appointmentsts/calendar.js: line 9, col 3, Unrecoverable syntax error. (81% scanned).\n\n12 errors');
-  });
-});

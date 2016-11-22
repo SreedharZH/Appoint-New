@@ -1,0 +1,52 @@
+<div class="calendar-container pos-fix">
+  <div class="header-secondary over">
+    <div class="header-col boxsize fl">
+    	<div class="appointment-view fl">
+        	<span class="view-label text-upper">View:</span>
+            <div class="view-type dis-inbl over">
+            	<span class="view-active active fl cp"><span class="calender-icon fl"></span></span>
+                <span class="view-active fl cp"><span class="list-icon fl"></span></span>
+            </div>
+        </div>
+        <div class="view-style fl text-upper">
+              <span class="day fl cp active" {{action "dayView"}}>Day</span>
+              <span class="week fl cp" {{action "weekView"}}>Week</span>
+              <span class="month fl cp" {{action "monthView"}}>Month</span>
+          </div>
+
+    </div>
+    <div class="header-col boxsize fl">
+      <div class="calendar-style over">
+          <div class="calendar-week" {{action "calendarPicker"}}>
+             <div class="datepicker-calendar hide" >{{bootstrap-datepicker-inline value=expiresAt class="form-control"}}</div>
+            <span class="prev fl cp"></span>
+            <span class="calendar-iconBlack fl cp"></span>
+              <span class="week fl cp text-upper">Nov 2016</span>
+              <span class="next fl cp"></span>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+    </div>
+    <div class="header-col boxsize fl">
+      <div class="book-button fr">
+      	<button class="cp"></button>
+      </div>
+      <div class="setting fr">
+      	<span class="setting-icon dis-inbl cp"></span>
+      </div>
+      <div class="services fr">
+          <span class="dropdown-label fl text-upper">Services:</span>
+          <span class="dropdown fl cp"><span class="label fl text-upper">All</span><span class="arrw-icon fl"></span></span>
+      </div>
+
+    </div>
+
+</div>
+<div class="calendar-wraper over">
+   {{app-calendars.day}}
+   {{app-calendars.week}}
+   {{app-calendars.month}}
+</div>
+
+</div>
+{{outlet}}
