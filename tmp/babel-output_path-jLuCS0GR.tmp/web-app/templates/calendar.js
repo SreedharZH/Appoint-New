@@ -23,11 +23,11 @@ define("web-app/templates/calendar", ["exports"], function (exports) {
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createElement("div");
-        dom.setAttribute(el1, "class", "calendar-container pos-fix");
+        dom.setAttribute(el1, "class", "calendar-container over");
         var el2 = dom.createTextNode("\n  ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("div");
-        dom.setAttribute(el2, "class", "header-secondary over");
+        dom.setAttribute(el2, "class", "header-secondary");
         var el3 = dom.createTextNode("\n    ");
         dom.appendChild(el2, el3);
         var el3 = dom.createElement("div");
@@ -38,10 +38,7 @@ define("web-app/templates/calendar", ["exports"], function (exports) {
         dom.setAttribute(el4, "class", "appointment-view fl");
         var el5 = dom.createTextNode("\n        	");
         dom.appendChild(el4, el5);
-        var el5 = dom.createElement("span");
-        dom.setAttribute(el5, "class", "view-label text-upper");
-        var el6 = dom.createTextNode("View:");
-        dom.appendChild(el5, el6);
+        var el5 = dom.createComment(" <span class=\"view-label text-upper\">View:</span> ");
         dom.appendChild(el4, el5);
         var el5 = dom.createTextNode("\n            ");
         dom.appendChild(el4, el5);
@@ -72,7 +69,7 @@ define("web-app/templates/calendar", ["exports"], function (exports) {
         var el4 = dom.createTextNode("\n        ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("div");
-        dom.setAttribute(el4, "class", "view-style fl text-upper");
+        dom.setAttribute(el4, "class", "view-style fl");
         var el5 = dom.createTextNode("\n              ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("span");
@@ -190,7 +187,7 @@ define("web-app/templates/calendar", ["exports"], function (exports) {
         var el5 = dom.createTextNode("\n          ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("span");
-        dom.setAttribute(el5, "class", "dropdown-label fl text-upper");
+        dom.setAttribute(el5, "class", "dropdown-label fl");
         var el6 = dom.createTextNode("Services:");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -199,7 +196,7 @@ define("web-app/templates/calendar", ["exports"], function (exports) {
         var el5 = dom.createElement("span");
         dom.setAttribute(el5, "class", "dropdown fl cp");
         var el6 = dom.createElement("span");
-        dom.setAttribute(el6, "class", "label fl text-upper");
+        dom.setAttribute(el6, "class", "label fl");
         var el7 = dom.createTextNode("All");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);

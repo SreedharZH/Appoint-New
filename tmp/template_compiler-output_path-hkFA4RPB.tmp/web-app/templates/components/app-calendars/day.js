@@ -322,8 +322,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -364,8 +362,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                  ");
       dom.appendChild(el5, el6);
@@ -406,8 +402,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -518,8 +512,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -598,8 +590,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -1109,8 +1099,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -1151,8 +1139,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                  ");
       dom.appendChild(el5, el6);
@@ -1193,8 +1179,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -1305,8 +1289,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -1385,8 +1367,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -1896,8 +1876,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -1938,8 +1916,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                  ");
       dom.appendChild(el5, el6);
@@ -1980,8 +1956,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -2092,8 +2066,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -2172,8 +2144,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -2683,8 +2653,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -2725,8 +2693,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                  ");
       dom.appendChild(el5, el6);
@@ -2767,8 +2733,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                 ");
       dom.appendChild(el5, el6);
@@ -2879,8 +2843,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);
@@ -2959,8 +2921,6 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("span");
       dom.setAttribute(el6,"class","sname dis-block");
-      var el7 = dom.createTextNode("B");
-      dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n           ");
       dom.appendChild(el5, el6);

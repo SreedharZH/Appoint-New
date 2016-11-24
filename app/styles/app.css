@@ -366,27 +366,31 @@ button {
 	cursor: pointer;
 }
 .header {
-	background: rgba(81,73,129,1);
+	/*background: rgba(81,73,129,1);
 	background: -moz-linear-gradient(left, rgba(81,73,129,1) 0%, rgba(113,75,163,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(81,73,129,1)), color-stop(100%, rgba(113,75,163,1)));
 	background: -webkit-linear-gradient(left, rgba(81,73,129,1) 0%, rgba(113,75,163,1) 100%);
 	background: -o-linear-gradient(left, rgba(81,73,129,1) 0%, rgba(113,75,163,1) 100%);
 	background: -ms-linear-gradient(left, rgba(81,73,129,1) 0%, rgba(113,75,163,1) 100%);
 	background: linear-gradient(to right, rgba(81,73,129,1) 0%, rgba(113,75,163,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514981', endColorstr='#714ba3', GradientType=1 );
-	box-shadow: rgba(0, 0, 0, 0.298039) 0 0 10px;
-	height: 60px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514981', endColorstr='#714ba3', GradientType=1 );*/
+	background: #50497f;
+	/*box-shadow: rgba(0, 0, 0, 0.298039) 0 0 10px;*/
+	height: 50px;
+    position: fixed;
+    top: 0;
 	width: 100%;
+	z-index:99;
 }
 .appoint-left {
-	padding: 9px 20px;
+	padding: 4px 20px 0;
 	width: 200px;
 }
 .logoimg {
 	background: url("/images/logo.png") 0% 0 / 100% no-repeat;
-	height: 41px;
-	vertical-align: middle;
-	width: 40px;
+	 height: 33px;
+    vertical-align: middle;
+    width: 32px;
 }
 .logoimg > img {
 	width: 100%;
@@ -404,12 +408,12 @@ button {
 .menu li {
 	float: left;
 	font-family: libre_franklinsemibold;
-	margin: 20px 30px;
+	margin: 14px 30px 0;
 }
 .menu li a {
 	color: #b1b0cb;
 	font-size: 13px;
-	padding: 21px 0;
+	padding: 10px 0 17px;
 	position: relative;
 	transform: translateZ(0px);
 }
@@ -434,8 +438,8 @@ button {
 }
 .user-profile{
 	background: rgba(0, 0, 0, 0) url("/images/user-profile.jpg") no-repeat scroll 0 0 / 100% auto;
-	width: 60px;
-	height: 60px;
+	height: 50px;
+    width: 50px;
 }
 .grey-color {
 	color: #666666;
@@ -1800,12 +1804,19 @@ select:-moz-focusring {
 
 /*calendar*/
 .calendar-container{
-	top: 60px;
+	margin-top: 50px;
 	width: 100%;
+	background: #f6f7fb;
 }
 .header-secondary{
-	padding:0 20px;
-	height:64px;
+	background-color: #f6f7fb;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 0 50px;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 98;
 }
 .header-col{
 	width: 33.33%;
@@ -1824,7 +1835,7 @@ select:-moz-focusring {
 	vertical-align:middle;
 }
 .header-secondary .appointment-view .view-type .calender-icon{
-	background:url("/images/sprite.png") -25px 0 no-repeat;
+	background:url("/images/calendera.svg") no-repeat;
 	width:16px;
 	height:16px;
 }
@@ -1834,7 +1845,7 @@ select:-moz-focusring {
 .header-secondary .appointment-view .view-type .list-icon{
 	background:url("/images/sprite.png") -25px -22px no-repeat;
 	width:16px;
-	height:16px;
+	height:17px;
 }
 .header-secondary .services{
 	padding:22px 40px;
@@ -1855,9 +1866,9 @@ select:-moz-focusring {
 	line-height: 10px;
 }
 .dropdown .arrw-icon{
-	background:url("/images/sprite.png") 3px -39px no-repeat;
-	width:16px;
-	height:16px;
+	background:url("/images/selectboxArrow.svg") no-repeat;
+	width:10px;
+	height:10px;
 }
 .header-secondary .dropdown-label{
 	margin-top: 3px;
@@ -1870,8 +1881,8 @@ select:-moz-focusring {
 	color: #000;
 }
 .header-secondary .dropdown .arrw-icon{
-	margin-left: 3px;
-	margin-top: 3px;
+	margin-left: 5px;
+	margin-top: 6px;
 }
 .header-secondary .book-button{
 	padding:12px 0;
@@ -1890,7 +1901,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	box-shadow: 0 0 10px 0 rgba(91, 90, 135, 0.59);
+	box-shadow: 3px 3px 20px rgba(116, 55, 150, 0.5);
 }
 .header-secondary .book-button button:before{
 	content:'+';
@@ -1903,7 +1914,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 	margin-right: 30px;
 }
 .header-secondary .setting .setting-icon{
-	background:rgba(0, 0, 0, 0) url("/images/setting-icon.png") no-repeat scroll 0 0 / 100% auto;
+	background:rgba(0, 0, 0, 0) url("/images/setting-icon.svg") no-repeat scroll 0 0 / 100% auto;
 	width: 20px;
 	height: 20px;
 }
@@ -1912,19 +1923,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 	border-left: 1px solid #eee;
 }
 .header-secondary .view-style span{
-	color:#999999;
-	font-size:12px;
-	font-family: libre_franklinmedium;
+	color:#111;
+	font-size:13px;
 	padding:5px 15px;
+	font-family: libre_franklinregular;
 }
 .header-secondary .view-style span.active{
 	color:#404081;
 }
 .calendar-style .calendar-iconBlack{
-	background:url("/images/sprite.png") -25px 0px no-repeat;
-	width:16px;
-	height:16px;
-	margin:4px 0 0 20px;
+	background:url("/images/calendera.svg") no-repeat;
+	height: 17px;
+    margin: 3px 0 0 20px;
+    width: 16px;
 }
 .calendar-style .calendar-week .week{
 	color:#333333;
@@ -1936,29 +1947,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 }
 .header-secondary .calendar-style{
 	margin: 20px auto;
-	width: 175px;
+	width: 177px;
 }
 .calendar-style .calendar-week > .prev,
 .calendar-style .calendar-week > .next{
-	background:url("/images/sprite.png") 0px -86px no-repeat;
+	background:url("/images/arrow1a.svg") no-repeat;
 	width:10px;
-	height:17px;
+	height:12px;
 	position:relative;
-	top:3px;
+	top:7px;
 }
 .calendar-style .calendar-week > .next{
-	background:url("/images/sprite.png") 0px -113px no-repeat;
+	transform: rotate(180deg);
+	/*background:url("/images/sprite.png") 0px -113px no-repeat;*/
 }
 .calendar-wraper{
 	box-sizing: border-box;
-	height: calc(100% - 125px);
+	margin-top: 54px;
 	overflow-y: scroll;
-	padding: 0 20px;
-	position: fixed;
+	padding: 20px 50px;
 	width: 100%;
+
 }
 .calendar {
 	 border: 1px solid #f2f2f2;
+	 box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
 }
 .calendar .calendar-titleRow,
 .calendar .appointment-row{
@@ -1975,7 +1988,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 .calendar-titleRow .calendar-day,
 .appointment-row .staff,
 .appointment-row .appointments{
-	border-right:1px solid #f2f2f2;
+	border-right:1px solid #efefef;
 	height:100%;
 }
 .calendar-titleRow .calendar-day:last-child,
@@ -2075,7 +2088,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 }
 .appointments .total-appointments{
 	color:#666666;
-	font-size:14px;
+	font-size:12px;
 	font-weight:300;
 	margin-bottom:15px;
 	font-family: libre_franklinregular;
@@ -2142,16 +2155,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 }
 .calendar.day-wise .services-row{
   height: 60px;
-  left: 139px;
-  top: 40px;
-  width: calc(100% - 139px);
+    left: 10%;
+    top: 40px;
+    width: calc(100% - 10%);
 	z-index: 1;
 }
 .day-wise .calendar-titleRow .calendar-day{
 	width: 8.18%;
 }
 .day-wise .calendar-titleRow .calendar-day .time-title .time{
-	color: #666666;
+	color: #333;
 	font-family: libre_franklinmedium;
 	font-size: 13px;
 }
@@ -2169,7 +2182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 .day-wise .appointments .time-slot .tslot{
 	display: table-cell;
 	width: 25%;
-	border-right: 1px dashed #E6E6E6;
+	border-right: 1px dashed #f6f6f6;
 	box-sizing: border-box;
 	height: 100%;
 	position: relative;
@@ -2178,7 +2191,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 	border-right: 0;
 }
 .day-wise .appointments .time-slot .tslot.half{
-	border-right: 1px dashed #C5C5C5;
+	border-right: 1px dashed #e6e6e6;
 }
 .day-wise .services-row .service,
 .day-wise .services-row .buff-time{
@@ -2189,7 +2202,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 .day-wise .services-row .service .sname,
 .day-wise .services-row .buff-time .sname{
 	color: #514981;
-	font-size: 15px;
+	font-size: 13px;
 	font-family: libre_franklinregular;
 }
 .day-wise .services-row .service .sname,
@@ -2201,39 +2214,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 }
 .day-wise .services-row .service .timing{
 	color: #6b5e97;
-	font-size: 11px;
+	font-size: 10px;
 	font-family: libre_franklinlight;
 	display: block;
-	margin-top: 6px;
+	margin-top: 7px;
 }
 .day-wise .services-row .haircut .service{
-	background: #e6eeff;
+	background: #e7eeff;
 }
 .day-wise .services-row .massage .service{
-	background: #e8ffe6;
+	background: #e8ffe5;
 }
 .day-wise .services-row .bridal .service{
-	background: #f5edff;
+	background: #f5ecff;
 }
 .day-wise .services-row .manicure .service{
-	background: #f8ffdf;
+	background: #f8ffde;
 }
 .day-wise .services-row .timeoff .service{
 	background: #f9f7fd;
 	padding: 20px 0;
 }
 .day-wise .services-row .threading .service{
-	background: #fff3ee;
+	background: #fef3ef;
 }
 .day-wise .services-row .beard .service{
-	background: #d1f1f5;
+	background: #d2f1f4;
 }
 .day-wise .services-row .buff-time{
-	background: #000;
+	background: rgba(0, 0, 0, 0) url("/images/available-bg.png") repeat-y scroll 0 0 / 100% auto;
 	padding: 20px 0;
-	width: 28px;
+	width: 27px;
+	height: 58px;
 }
-.day-wise .services-row .haircut .buff-time{
+/*.day-wise .services-row .haircut .buff-time{
 	background: #f2f8ff;
 }
 .day-wise .services-row .massage .buff-time{
@@ -2250,26 +2264,81 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615d97', end
 }
 .day-wise .services-row .beard .buff-time{
 	background: #e5f9fb;
-}
+}*/
 .day-wise .services-row .service.one-hr{
-	width: 115px;
+	width: 109px;
 }
 .day-wise .services-row .service.one-halfhr{
-	width: 172px;
+	width: 165px;
 }
 .day-wise .services-row .service.half-hr{
-	width: 58px;
+	width: 55px;
 }
 .day-wise .services-row .booked-services .avail-booking{
 	height: 58px;
 	width: 28px;
 }
 .day-wise .services-row .booked-services .avail-booking .available{
-	background:rgba(0, 0, 0, 0) url("/images/available-bg.png") repeat-y scroll 0 0 / 100% auto;
+	background:#FBFBFB;
 	width: 100%;
 	height: 100%;
 }
-.calendar.day-wise{
-
+.day-wise .calendar-day:nth-child(4),
+.day-wise .appointments:nth-child(5){
+	border-right: 1px solid #fbc6cf;
 }
 /*calendar*/
+
+
+.dropdownlist{
+    background: white none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: inherit;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+    left: 0;
+    list-style: outside none none;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: all 0.5s ease-in 0s;
+	border-radius:3px;
+	z-index:10
+}
+.dropdownlist a{
+    border-bottom: 1px solid #e6e8ea;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 1) inset;
+    color: #111;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+	font-size:15px;
+}
+.dropdownlist a:hover{
+  background:#f3f8f8;
+}
+.dropdownlist:after{
+    border-color: #fff transparent;
+    border-style: solid;
+    border-width: 0 6px 6px;
+    bottom: 100%;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 15px;
+    width: 0;
+}
+.dropdownlist:before{
+    border-color: rgba(0, 0, 0, 0.1) transparent;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    bottom: 100%;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 13px;
+    width: 0;
+}

@@ -79,7 +79,7 @@ export default Ember.HTMLBars.template((function() {
           "column": 0
         },
         "end": {
-          "line": 27,
+          "line": 28,
           "column": 0
         }
       },
@@ -182,6 +182,11 @@ export default Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createTextNode("\n                  ");
       dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode("\n                  ");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createElement("div");
+      dom.setAttribute(el5,"class","clearfix");
       dom.appendChild(el4, el5);
       var el5 = dom.createTextNode("\n           ");
       dom.appendChild(el4, el5);
